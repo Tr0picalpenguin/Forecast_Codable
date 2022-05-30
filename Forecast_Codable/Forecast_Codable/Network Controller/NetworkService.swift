@@ -8,7 +8,7 @@
 import Foundation
 
 class WeatherNetworkService {
-
+    
     private static let baseURLString = "https://api.weatherbit.io/v2.0/"
     
     static func fetchDays(completion: @escaping(TopLevelDictionary?) -> Void) {
@@ -22,6 +22,24 @@ class WeatherNetworkService {
         urlComponents?.queryItems = [apiQuery, cityQuery, unitsQuery]
         guard let finalURL = urlComponents?.url else {return}
         print(finalURL)
+        URLSession.shared.dataTask(with: finalURL) { data, _, error in
+            if let error = error {
+                print("There was an error fetching the data. The url is \(finalURL), the error is \(error.localizedDescription)")
+                completion(nil)
+            }
+            guard let data = data else {
+                print("There was an error recieving the data!")
+                completion(nil)
+                return
+            }
+            do {
+                let topLevelDictionary = try JSONDecoder().decode(TopLevelDictionary.self, from: data)
+                completion(topLevelDictionary)
+            } catch {
+                print("Error in all this stuff.", error.localizedDescription)
+                completion(nil)
+            }            
+        }.resume()
     }
     
 } // End of class
