@@ -140,6 +140,8 @@
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="tintColor" red="0.99215686270000003" green="0.50196078430000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <connections>
+                                                        <outlet property="dayNameLabel" destination="lIw-WJ-jKh" id="QVH-Qd-hDV"/>
+                                                        <outlet property="forcastedHighLabel" destination="EgU-z0-CHa" id="eyw-pz-a6d"/>
                                                         <outlet property="iconImageView" destination="7lD-Ht-6X4" id="srp-nT-ji0"/>
                                                     </connections>
                                                 </tableViewCell>
@@ -177,6 +179,14 @@
                             <constraint firstItem="eGC-SY-7gd" firstAttribute="top" secondItem="svK-ZT-dU8" secondAttribute="bottom" constant="20" id="yGJ-KQ-KsN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityNameLabel" destination="5H5-Gy-4LZ" id="9J5-cf-klY"/>
+                        <outlet property="currentDescriptionLabel" destination="T8Z-g7-grA" id="UGl-jk-S2f"/>
+                        <outlet property="currentHighLabel" destination="Esr-ij-ShE" id="mmf-fy-aYV"/>
+                        <outlet property="currentLowLabel" destination="TAA-be-agO" id="Vrf-Gp-OQ4"/>
+                        <outlet property="currentTempLabel" destination="A8A-Jh-aob" id="f9r-d3-UXg"/>
+                        <outlet property="dayForcastTableView" destination="JDc-2Y-LkP" id="H6f-se-UiA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

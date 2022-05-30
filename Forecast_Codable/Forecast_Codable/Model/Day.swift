@@ -8,7 +8,7 @@
 import Foundation
 
 struct TopLevelDictionary: Decodable {
-    private enum CodinKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case cityName = "city_name"
         case days = "data"
     }
