@@ -14,6 +14,7 @@
 		413CA71327B0DA1F00461FE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413CA71127B0DA1F00461FE3 /* LaunchScreen.storyboard */; };
 		413CA72327B0DC4300461FE3 /* DayDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413CA72227B0DC4300461FE3 /* DayDetailsViewController.swift */; };
 		413CA72527B0DC7E00461FE3 /* DayForcastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413CA72427B0DC7E00461FE3 /* DayForcastTableViewCell.swift */; };
+		EDA4AD3C28454C0D00D6E919 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA4AD3B28454C0D00D6E919 /* Day.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		413CA71427B0DA1F00461FE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		413CA72227B0DC4300461FE3 /* DayDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailsViewController.swift; sourceTree = "<group>"; };
 		413CA72427B0DC7E00461FE3 /* DayForcastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayForcastTableViewCell.swift; sourceTree = "<group>"; };
+		EDA4AD3B28454C0D00D6E919 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,8 @@
 		413CA70527B0DA1C00461FE3 /* Forecast_Codable */ = {
 			isa = PBXGroup;
 			children = (
-				413CA71D27B0DBCF00461FE3 /* Model */,
-				413CA71F27B0DBE100461FE3 /* Controller */,
+				EDA4AD3A2845486000D6E919 /* View Controller */,
+				EDA4AD392845485700D6E919 /* Model */,
 				413CA71E27B0DBDB00461FE3 /* View */,
 				413CA71A27B0DA5600461FE3 /* Supporting Files */,
 				413CA70C27B0DA1C00461FE3 /* Main.storyboard */,
@@ -79,13 +81,6 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		413CA71D27B0DBCF00461FE3 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		413CA71E27B0DBDB00461FE3 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,11 +90,19 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		413CA71F27B0DBE100461FE3 /* Controller */ = {
+		EDA4AD392845485700D6E919 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDA4AD3B28454C0D00D6E919 /* Day.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDA4AD3A2845486000D6E919 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Controller;
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +179,7 @@
 				413CA70727B0DA1C00461FE3 /* AppDelegate.swift in Sources */,
 				413CA72327B0DC4300461FE3 /* DayDetailsViewController.swift in Sources */,
 				413CA70927B0DA1C00461FE3 /* SceneDelegate.swift in Sources */,
+				EDA4AD3C28454C0D00D6E919 /* Day.swift in Sources */,
 				413CA72527B0DC7E00461FE3 /* DayForcastTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
